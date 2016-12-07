@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>HtmlValidation</title>
+</head>
+<body>
+    <h1>HtmlValidation</h1>
+    <form enctype="multipart/form-data" method="post" th:action="@{validate}">
+        <table>
+            <tbody>
+                <tr>
+                    <td width="35%">file to upload</td>
+                    <td width="65%"><input type="file" name="file" /></td>
+                </tr>
+                <tr>
+                    <td width="35%"></td>
+                    <td width="65%"><input type="submit" /></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
